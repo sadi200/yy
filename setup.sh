@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Start a screen session
-screen -S gensyn
-
 # Update and install essential packages
 sudo apt update
 sudo apt install -y python3 python3-venv python3-pip curl screen git yarn
@@ -23,4 +20,4 @@ git clone https://github.com/zunxbt/rl-swarm.git
 cd rl-swarm
 
 # Set up Python virtual environment and run the script
-python3 -m venv .venv && source .venv/bin/activate && ./run_rl_swarm.sh
+screen -S gensyn && python3 -m venv .venv && source .venv/bin/activate && ./run_rl_swarm.sh
