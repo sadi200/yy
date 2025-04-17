@@ -31,7 +31,5 @@ sudo apt update && sudo apt install -y yarn
 curl -sSL https://raw.githubusercontent.com/sadi200/yy/refs/heads/main/node.sh | bash
 
 # Start a new screen session
-screen -S gensyn
+screen -S gensyn && cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
 
-# Clone and run gensyn testnet script
-cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
