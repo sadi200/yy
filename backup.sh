@@ -7,6 +7,16 @@ BLUE='\033[1;34m'
 BOLD='\033[1m'
 NC='\033[0m'
 
+# Earn Point Logo in Yellow and Blue
+echo -e "${YELLOW}   ______          ${BLUE} _       _       ${NC}"
+echo -e "${YELLOW}  / ____/___  ____ ${BLUE}(_)___  (_)___  ${NC}"
+echo -e "${YELLOW} / __/ / __ \/ __ \`${BLUE}/ / __ \/ / __ \ ${NC}"
+echo -e "${YELLOW}/ /___/ / / / /_/ ${BLUE}/ / / / / / /_/ / ${NC}"
+echo -e "${YELLOW}\____/_/ /_/\__, ${BLUE}/_/_/ /_/_/ .___/  ${NC}"
+echo -e "${YELLOW}           /____/${BLUE}         /_/       ${NC}"
+echo -e "${BLUE}=================================${NC}"
+echo
+
 print_message() {
     echo -e "${BLUE}[INFO]${NC} $1"
 }
